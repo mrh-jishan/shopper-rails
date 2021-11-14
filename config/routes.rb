@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  post 'authenticate', to: 'authentication#authenticate'
+  post 'login', to: 'auth#login'
+  post 'register', to: 'auth#register'
   resources :users, :addresses, :address_types
 end
