@@ -1,5 +1,9 @@
 class AddressesController < ApplicationController
   def index
-    render :json => Address.all
+    render :json => @current_user.addresses
+  end
+
+  def create
+
   end
 end
